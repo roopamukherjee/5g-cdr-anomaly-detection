@@ -1,0 +1,18 @@
+CDR DEFINITIONS ::= BEGIN
+
+IMSI ::= NumericString (SIZE(15))
+MSISDN ::= NumericString (SIZE(15))
+TimeStamp ::= VisibleString (SIZE(19)) 
+DataVolumeOctets ::= INTEGER (0..MAX)
+
+CDRRecord ::= SEQUENCE {
+    imsi IMSI,
+    msisdn MSISDN,
+    startTime TimeStamp,
+    endTime TimeStamp,
+	dataVolume     INTEGER,
+    uplinkVolume INTEGER,
+    downlinkVolume INTEGER
+}
+CDRRecords ::= SEQUENCE OF CDRRecord
+END
