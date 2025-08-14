@@ -10,9 +10,9 @@ CDRRecord ::= SEQUENCE {
     msisdn MSISDN,
     startTime TimeStamp,
     endTime TimeStamp,
-	dataVolume     INTEGER,
-    uplinkVolume INTEGER,
-    downlinkVolume INTEGER
+	dataVolume     DataVolumeOctets,
+    uplinkVolume DataVolumeOctets,
+    downlinkVolume DataVolumeOctets
 }
 CDRRecords ::= SEQUENCE OF CDRRecord
 END
