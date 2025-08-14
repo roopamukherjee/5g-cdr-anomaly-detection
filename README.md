@@ -11,6 +11,15 @@ Ideal for **telecom operators**, **MVNOs**, and **network engineers** who need i
 
 ---
 
+## 📂 Files
+
+- **sample_5g_cdr.asn** – ASN.1 schema definition for a sample 5G CDR record.  
+- **sample_5gcall.der** – DER-encoded binary file containing **100 randomly generated CDR records**.  
+  - All fields (IMSI, MSISDN, data volumes, times) are randomly generated.
+  - **Contains no real-world telecom data.**
+    
+---
+
 ## 🚀 Features
 - 📜 **ASN.1 CDR Decoding** – Converts complex binary records into readable format.
 - 🔍 **Anomaly Detection** – Finds irregular usage patterns & signaling errors.
